@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>重要なお知らせ</title>
+
   <style>
     body {
       margin: 0;
@@ -29,34 +30,45 @@
       font-size: 18px;
       cursor: pointer;
     }
+
+    h2 {
+      display: none;
+    }
   </style>
 </head>
 
 <body>
+
   <div class="box">
+
     <h1>重要なお知らせ</h1>
+
     <p>内容を確認するには下のボタンを押してください。</p>
 
     <button onclick="showCat()">確認する</button>
 
-<h2 id="message-top" style="display:none;">
-  引っ掛かりましたね...(^_-)-☆
-</h2>
-
-<img id="cat" src="Image.jpg" alt="yoshi" style="display:none;">
-
-<h2 id="message-bottom" style="display:none;">
-  引っ掛かりましたね...(^_-)-☆
-</h2>
+    <!-- 上の文章 -->
+    <h2 id="message-top">
+      引っ掛かりましたね...(^_-)-☆
     </h2>
+
+    <!-- 画像 -->
+    <img id="cat" src="Image.jpg" alt="yoshi">
+
+    <!-- 下の文章 -->
+    <h2 id="message-bottom">
+      引っ掛かりましたね...(^_-)-☆
+    </h2>
+
   </div>
 
   <script>
     function showCat() {
-      document.getElementById("cat").style.display = "block";
       document.getElementById("message-top").style.display = "block";
+      document.getElementById("cat").style.display = "block";
       document.getElementById("message-bottom").style.display = "block";
     }
   </script>
+
 </body>
 </html>
