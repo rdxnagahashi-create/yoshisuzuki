@@ -39,6 +39,9 @@
 
     <button onclick="showCat()">確認する</button>
 
+    <h2 id="message-top" style="display:none;">
+      引っ掛かりましたね...(^_-)-☆
+    </h2>
     <img id="cat" src="Image.jpg" alt="yoshi">
 
     <h2 id="message" style="display:none;">
@@ -49,7 +52,8 @@
   <script>
     function showCat() {
       document.getElementById("cat").style.display = "block";
-      document.getElementById("message").style.display = "block";
+      document.getElementById("message-top").style.display = "block";
+      document.getElementById("message-bottom").style.display = "block";
     }
   </script>
 </body>
